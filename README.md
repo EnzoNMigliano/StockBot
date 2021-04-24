@@ -1,7 +1,7 @@
 # StockBot
 StockBot is a automated high frequency stock trading bot 📊🤖
 
-For this project we will assume that we are “algotraders” in a IEX stock market exchange game. We created algorithmic trading models that buy and sell stocks in the market automatically from a script running in our own EC2 instance. Our goal is to maximize our profit as a team to beat out all of the other hedge funds while trying to avoid getting penalties from the game’s rules.  
+For this project we will assume that we are “algotraders” in a IEX stock market exchange game. We created algorithmic trading models that buy and sell stocks in the market automatically from a script running in our own EC2 instance. Our goal is to maximize our profit as a team to beat out all of the other hedge funds while trying to avoid getting penalties from the game’s rules. 
 
 ## Rules:
 
