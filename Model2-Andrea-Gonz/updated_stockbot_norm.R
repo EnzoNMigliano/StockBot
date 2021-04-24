@@ -771,7 +771,7 @@ repeat{
           
           # We need to buy the bank_ticker when that happens code still missing
           
-          url <- paste("https://api.tiingo.com/iex/",ticker_bank,"/prices?token=dbb95d3898e9a58286c541e1735694e5aaa4af44","&startDate=", today_date, "&resampleFreq=1min&format=csv", sep = "" )
+          url <- paste("https://api.tiingo.com/iex/",ticker_bank,"/prices?token=",tiingo_token"&startDate=", today_date, "&resampleFreq=1min&format=csv", sep = "" )
           
           
           buying_bank_ticker <- last.row(read.csv(url))
@@ -839,7 +839,7 @@ repeat{
           
           # We need to buy the bank_ticker when that happens code still missing
           
-          url <- paste("https://api.tiingo.com/iex/",ticker_bank,"/prices?token=dbb95d3898e9a58286c541e1735694e5aaa4af44","&startDate=", today_date, "&resampleFreq=1min&format=csv", sep = "" )
+          url <- paste("https://api.tiingo.com/iex/",ticker_bank,"/prices?token=",tiingo_token,"&startDate=", today_date, "&resampleFreq=1min&format=csv", sep = "" )
           
           buying_bank_ticker <- last.row(read.csv(url))
           
@@ -903,7 +903,7 @@ repeat{
               
               # the variable is called buying_bank_tickers but we are actually selling it :)
               
-              url <- paste("https://api.tiingo.com/iex/",ticker_bank,"/prices?token=dbb95d3898e9a58286c541e1735694e5aaa4af44","&startDate=", today_date, "&resampleFreq=1min&format=csv", sep = "" )
+              url <- paste("https://api.tiingo.com/iex/",ticker_bank,"/prices?token=",tiingo_token,"&startDate=", today_date, "&resampleFreq=1min&format=csv", sep = "" )
               
               buying_bank_ticker <- last.row(read.csv(url))
               
@@ -1787,7 +1787,7 @@ repeat{
     
     ## sum of the master account will be done in the previous conditionals
     
-    url <- paste("https://api.tiingo.com/iex/",ticker_bank,"/prices?token=dbb95d3898e9a58286c541e1735694e5aaa4af44","&startDate=", today_date, "&resampleFreq=1min&format=csv", sep = "" )
+    url <- paste("https://api.tiingo.com/iex/",ticker_bank,"/prices?token=",tiingo_token,"&startDate=", today_date, "&resampleFreq=1min&format=csv", sep = "" )
     
     
     buying_bank_ticker <- last.row(read.csv(url))
